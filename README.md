@@ -8,7 +8,6 @@ Create a new project in IntelliJ and lay the foundation for the Java Record Zoo 
 * Make a commit. Please post the link to your GitHub repository where you solved this task together.
   `inputfield`
 
-```markdown
 ## Coding: Calling Record Methods
 
 Now let's test the automatically generated methods.
@@ -81,7 +80,7 @@ If you have already completed the main task, you can try this bonus task.
 
 A bank without interest? That's not acceptable!
 
-* Extend the 'BankService' with a method that calculates and credits interest to all customer accounts based on an interest rate. (Interest = Account Balance * (Interest Rate / 100).
+* Extend the 'BankService' with a method that calculates and credits interest to all customer accounts based on an interest rate. (Interest = Account Balance * (Interest Rate / 100)).
 
 ## Bonus: Transactions
 
