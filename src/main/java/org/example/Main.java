@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.bankservice.Account;
+import org.example.bankservice.BankService;
 import org.example.bankservice.Client;
 import org.example.zoo.Animal;
 import org.example.zoo.Owner;
@@ -40,6 +41,7 @@ public class Main {
         }
 
         // BankService
+
         System.out.println("=== BankService ===");
 
         Client myClient = new Client("Carsten","Kremser",1);
@@ -53,6 +55,17 @@ public class Main {
         myAccount.withdrawMoney(new BigDecimal("79.98"));
         System.out.println(myAccount);
 
+        BankService bankService = new BankService();
+        String accountNoMyClient = bankService.openAccount(myClient);
+
+        System.out.println(bankService);
+
+        String accountNoOtherClient = bankService.openAccount(new Client("Max","Mustermann",101));
+
+        System.out.println(bankService);
+
+        bankService.transferAmount(accountNoOtherClient,accountNoMyClient,new BigDecimal("1234.56"));
+        System.out.println(bankService);
 
 
     }
