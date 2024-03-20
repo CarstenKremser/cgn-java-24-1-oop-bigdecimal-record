@@ -2,17 +2,21 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 
-        double num1 = 1e10;
-        double num2 = 1e-10;
-        double num3 = num1+num2;
-        double num4 = num3-num1;
-        System.out.println(num1);
-        System.out.println(num2);
-        System.out.println(num3);
-        System.out.println(num4);
+        Animal froschi = new Animal(1, "Froschi","Cat", 15);
+        Animal xenia = new Animal(2,"Xenia", "Cat", 16);
 
+        Animal benni = new Animal(1,"Froschi", "Cat", 15);
+
+        System.out.println(froschi);
+        System.out.println(xenia);
+        System.out.println(benni);
+
+        if (froschi.equals(benni)) {
+            System.out.println("Froschi ist Benni");
+        } else {
+            System.out.println("Froschi ist NICHT Benni");
+        }
     }
 
 
