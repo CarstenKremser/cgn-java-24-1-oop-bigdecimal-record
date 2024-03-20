@@ -18,10 +18,6 @@ public class Account {
         return accountBalance;
     }
 
-    public void setAccountBalance(BigDecimal accountBalance) {
-        this.accountBalance = accountBalance;
-    }
-
     public Client getCustomer() {
         return customer;
     }
@@ -31,6 +27,15 @@ public class Account {
         this.customer = customer;
         this.accountBalance = new BigDecimal("0").setScale(2);
     }
+
+    public void depositMoney(BigDecimal amount) {
+        this.accountBalance = this.accountBalance.add(amount);
+    }
+
+    public void withdrawMoney(BigDecimal amount) {
+        this.accountBalance = this.accountBalance.subtract(amount);
+    }
+
 
     @Override
     public boolean equals(Object object) {

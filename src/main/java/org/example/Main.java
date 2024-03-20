@@ -6,6 +6,8 @@ import org.example.zoo.Animal;
 import org.example.zoo.Owner;
 import org.example.zoo.Species;
 
+import java.math.BigDecimal;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -43,6 +45,12 @@ public class Main {
         Client myClient = new Client("Carsten","Kremser",1);
         Account myAccount = new Account("XYZ-000-001", myClient);
 
+        System.out.println(myAccount);
+
+        myAccount.depositMoney(new BigDecimal(5000));
+        System.out.println(myAccount);
+
+        myAccount.withdrawMoney(new BigDecimal("79.98"));
         System.out.println(myAccount);
 
 
