@@ -1,11 +1,17 @@
 package org.example;
 
+import org.example.bankservice.Account;
+import org.example.bankservice.Client;
 import org.example.zoo.Animal;
 import org.example.zoo.Owner;
 import org.example.zoo.Species;
 
 public class Main {
     public static void main(String[] args) {
+
+        // Zoo
+
+        System.out.println("=== Zoo ===");
 
         Owner carsten = new Owner("Carsten", 56, "Musterstraße 123, 12345 Musterhausen");
         Owner santaclaus = new Owner("Santa Claus",9999,"Wolkenweg 1, 00000 Himmel");
@@ -30,6 +36,17 @@ public class Main {
         } else {
             System.out.println("Froschi ist NICHT Benni");
         }
+
+        // BankService
+        System.out.println("=== BankService ===");
+
+        Client myClient = new Client("Carsten","Kremser",1);
+        Account myAccount = new Account("XYZ-000-001", myClient);
+
+        System.out.println(myAccount);
+
+
+
     }
 
 
