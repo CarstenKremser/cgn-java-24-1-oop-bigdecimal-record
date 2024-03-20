@@ -1,4 +1,4 @@
-package org.example;
+package org.example.zoo;
 
 public record Animal(
         int id,

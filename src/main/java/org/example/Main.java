@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.zoo.Animal;
+import org.example.zoo.Owner;
+import org.example.zoo.Species;
+
 public class Main {
     public static void main(String[] args) {
 
